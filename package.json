@@ -1,0 +1,33 @@
+{
+  "name": "yomrest-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "ts-node-dev ./src/index.ts",
+    "tsc": "tsc",
+    "start": "node ./build/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Luis Francisco Gil Perez",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "2.8.5",
+    "express": "4.18.1",
+    "express-session": "1.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "6.3.5",
+    "passport": "0.4.1",
+    "passport-local": "1.0.0"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.12",
+    "@types/express": "4.17.13",
+    "@types/express-session": "^1.17.4",
+    "@types/passport": "^1.0.7",
+    "ts-node-dev": "2.0.0",
+    "typescript": "4.7.2"
+  }
+}

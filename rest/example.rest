@@ -1,0 +1,22 @@
+POST http://localhost:3001/api/local
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFkbWluIiwiaWQiOiI2Mjk2ZjliOGM5MTU5NjM1MTg5ZTIxY2IiLCJpYXQiOjE2NTQwODQ4NTV9.ne2wiKI5KougJOdt1GUPzO6X3avxhI--zDFObxJjMAY
+
+{
+    "name": "prueba",
+    "contact": "luis",
+    "address": "www.google.com"
+}
+
+###
+GET http://localhost:3001/api/local
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyTmFtZSI6ImFkbWluIiwiaWQiOiI2Mjk2ZjliOGM5MTU5NjM1MTg5ZTIxY2IiLCJpYXQiOjE2NTQwODQ4NTV9.ne2wiKI5KougJOdt1GUPzO6X3avxhI--zDFObxJjMAY
+
+###
+POST http://localhost:3001/api/login/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "userName": "admin",
+    "password": "yomyom"
+}
