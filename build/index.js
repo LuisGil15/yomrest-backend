@@ -16,6 +16,9 @@ app.use((0, cors_1.default)({ origin: true, credentials: true }));
 // Routes
 app.use('/api/login', require('./controllers/login'));
 app.use('/api/local', require('./controllers/local'));
+app.get('/', (_req, res) => {
+    res.send('Hello World - Luis Gil');
+});
 // Server
 app.listen(app.get("port"), () => {
     console.log(`Server listening on port ${app.get("port")}`);
